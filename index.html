@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css"
+
+
+  <meta charset="UTF-8">
+  <meta name="description" content="portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Alex's portfolio">
+  <meta name="apple-mobile-web-app-title" content="Alex's portfolio">
+  <meta name="theme-color" content="#FF9800">
+  <meta name="msapplication-navbutton-color" content="#FF9800">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-starturl" content="/index.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <title>Alex's portfolio</title>
+</head>
+<body>
+  <div class="text-container">
+    <h1>Alex Steinberg</h1>
+    <h2>Full stack web developer apprentice</h2>
+  </div>
+  <div class="img-container">
+    <img class="profile-photo" src="images/foto3.jpg" alt="Alex Steinberg">
+  </div>
+
+
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('./service-worker.js')
+        .then(reg => {
+          console.log('Service worker registered! 😎', reg);
+        })
+        .catch(err => {
+          console.log('😥 Service worker registration failed: ', err);
+        });
+    });
+  }
+  </script>
+</body>
+</html>
