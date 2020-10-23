@@ -28,6 +28,7 @@ html {
   perspective: 100rem;
   background-image: linear-gradient(var(--color-dark), var(--color-light));
   -webkit-background-clip: text;
+  background-clip: none;
 }
 
 body {
@@ -39,8 +40,8 @@ body {
 }
 
 .text-container {
-  color: transparent;
   text-align: center;
+  -webkit-text-fill-color: transparent;
 }
 
 h1 {
