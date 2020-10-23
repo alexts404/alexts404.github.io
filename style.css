@@ -138,10 +138,9 @@ h2 {
   transform: rotateY(0);
 }
 
+a,
+a:active,
 p {
   text-decoration: none;
-}
-
-p :active {
   color: inherit;
 }
