@@ -1,0 +1,235 @@
+:root {
+  --spacing-large: 5rem;
+  --spacing-medium: 3rem;
+  --spacing-small: 1rem;
+
+  --color-dark: #2b3848;
+  --color-medium: #848b93;
+  --color-light: #eee;
+  --color-primary: #d58900;
+  --color-primary-light: #e3c082;
+  --color-primary-super-light: #e7d2ad;
+
+  --padding-content-sides: 10rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  /* color: var(--color-dark); */
+  background-image: linear-gradient(
+    var(--color-primary-light),
+    var(--color-light)
+  );
+  font-family: "Lato", sans-serif;
+  background-clip: none;
+  min-height: 100vh;
+}
+
+.text-container {
+  padding-top: 1rem;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: var(--spacing-small);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.enter-component__profile-photo {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  backface-visibility: hidden;
+  transition: all 1s ease;
+  z-index: 1;
+}
+
+.enter-component__profile-photo img {
+  position: absolute;
+  border-radius: 100%;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%);
+}
+
+.enter-component__profile-photo::after {
+  opacity: 0.7;
+  position: absolute;
+  content: "";
+  width: 22rem;
+  height: 22rem;
+  border-radius: 100%;
+  background-image: linear-gradient(#7c828b, var(--color-light));
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.enter-component__profile-photo {
+  width: 30%;
+  min-width: 25rem;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+a,
+a:active,
+p {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: var(--color-primary);
+  height: 60rem;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  padding: 0 var(--padding-content-sides);
+}
+
+.inner-container {
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-7.5%);
+}
+.textimage-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-image: linear-gradient(var(--color-dark), var(--color-medium));
+  -webkit-background-clip: text;
+}
+
+.tech {
+  padding: calc(var(--padding-content-sides) + 6rem);
+}
+
+.tech ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tech ul li {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 5rem;
+  background-color: var(--color-primary);
+  color: var(--color-primary-super-light);
+  margin: 1rem 2rem;
+  text-shadow: 1px 1px rgba(43, 56, 72, 0.7);
+}
+
+li {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.clip-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  height: 60rem;
+  z-index: -1;
+}
+.projects {
+  position: relative;
+  /* background-color: var(--color-primary); */
+  /* clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%); */
+  min-height: 60rem;
+  padding-top: 12rem;
+}
+
+.text-outer-container {
+  background-image: linear-gradient(var(--color-dark), var(--color-medium));
+  -webkit-background-clip: text;
+}
+
+.projects-container {
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  padding: 10rem var(--padding-content-sides);
+  background-color: var(--color-primary);
+  z-index: -2;
+}
+
+.footer {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: var(--color-primary);
+  font-size: 2rem;
+  color: var(--color-primary-super-light);
+  text-shadow: 1px 1px rgba(43, 56, 72, 0.7);
+  padding: 2rem 0;
+}
+
+main {
+  padding: 0 6rem;
+  min-width: 75rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.projects h2 {
+  margin-bottom: 2rem;
+}
+
+.projects-list li {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 4rem;
+  margin-top: 6rem;
+  height: 35rem;
+  min-width: 45rem;
+  background-color: var(--color-primary-light);
+  -webkit-text-fill-color: var(--color-dark);
+  align-items: center;
+  margin-right: 6rem;
+}
+
+.projects-list li img {
+  height: 22rem;
+}

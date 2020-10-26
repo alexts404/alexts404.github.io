@@ -1,0 +1,27 @@
+{
+  "name": "atsteinberg.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "service-worker.js",
+  "dependencies": {
+    "prettier": "^2.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atsteinberg/atsteinberg.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atsteinberg/atsteinberg.github.io/issues"
+  },
+  "homepage": "https://github.com/atsteinberg/atsteinberg.github.io#readme"
+}
