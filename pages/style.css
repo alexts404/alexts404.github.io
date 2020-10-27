@@ -247,6 +247,10 @@ main {
 }
 
 @media only screen and (max-width: 750px) {
+  .text-container {
+    margin: 0;
+    text-align: center;
+  }
   .textimage-container {
     flex-direction: column;
     align-items: center;
