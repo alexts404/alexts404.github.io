@@ -211,7 +211,6 @@ li {
 main {
   padding: 0 6rem;
   min-width: 30rem;
-  width: fit-content;
 }
 
 .projects-list {
