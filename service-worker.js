@@ -4,7 +4,7 @@ const precacheResources = [
   'index.html',
   'style.css',
   'images/foto3.jpg',
-  'pages/main.html',
+  'main.html',
   'images/foto1l.png',
   'assets/fleetSpyl.png',
   'assets/karal.png',
