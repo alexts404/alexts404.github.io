@@ -38,7 +38,6 @@ body {
 .text-container {
   padding-top: 1rem;
   margin-left: 3rem;
-
   background-image: linear-gradient(var(--color-dark), var(--color-medium));
   -webkit-background-clip: text;
 }
