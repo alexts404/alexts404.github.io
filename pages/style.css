@@ -40,6 +40,7 @@ body {
   margin-left: 3rem;
   background-image: linear-gradient(var(--color-dark), var(--color-medium));
   -webkit-background-clip: text;
+  /* background-clip: text; */
 }
 
 h1 {
@@ -184,6 +185,7 @@ li {
 .text-outer-container {
   background-image: linear-gradient(var(--color-dark), var(--color-medium));
   -webkit-background-clip: text;
+  /* background-clip: text; */
 }
 
 .projects-container {
