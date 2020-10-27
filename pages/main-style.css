@@ -269,10 +269,15 @@ main {
   }
   .projects-list li {
     margin-right: 2rem;
-    min-width: 40rem;
+    min-width: 30rem;
+    height: 28rem;
   }
   .projects h2 {
     text-align: center;
     padding-right: 2rem;
+  }
+  .projects-list li img {
+    max-width: 20rem;
+    height: auto;
   }
 }
